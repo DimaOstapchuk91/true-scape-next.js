@@ -1,2 +1,6 @@
 @import 'tailwindcss';
 @import 'modern-normalize';
+
+body {
+  background-color: #ffffff;
+}
