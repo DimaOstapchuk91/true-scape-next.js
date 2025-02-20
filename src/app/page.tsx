@@ -1,4 +1,4 @@
-import StatusLabel, { Status } from './components/active-label/ActiveLabel';
+import StatusLabel, { Status } from './components/active-label/StatusLabel';
 import './globals.css';
 
 export default function Home() {
