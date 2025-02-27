@@ -1,4 +1,3 @@
-import StatusLabel, { Status } from './components/active-label/StatusLabel';
 import AddCompanyBtn from './components/AddCompanyBtn/AddCompanyBtn';
 import ClientComponent from './components/ClientComponent/ClientComponent';
 import ServerComponent from './components/ServerComponent/ServerComponent';

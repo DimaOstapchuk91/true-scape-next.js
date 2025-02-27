@@ -1,8 +1,8 @@
 import React from 'react';
 
-export interface PageProps {}
+export interface PagePropsTest {}
 
-export default function Page({}: PageProps) {
+export default function Page({}: PagePropsTest) {
   return (
     <main>
       <h1>Dashboard Page</h1>
