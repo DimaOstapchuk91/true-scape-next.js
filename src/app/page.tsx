@@ -1,5 +1,6 @@
 import AddCompanyBtn from './components/AddCompanyBtn/AddCompanyBtn';
 import ClientComponent from './components/ClientComponent/ClientComponent';
+import MagicBtn from './components/MagicBtn/MagicBtn';
 import ServerComponent from './components/ServerComponent/ServerComponent';
 import ServerComponentCopy from './components/ServerComponentCopy/ServerComponentCopy';
 import './globals.css';
@@ -17,6 +18,7 @@ export default function Home() {
       <ClientComponent>
         <ServerComponentCopy />
       </ClientComponent>
+      <MagicBtn />
     </main>
   );
 }
