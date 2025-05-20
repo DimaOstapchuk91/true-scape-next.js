@@ -1,12 +1,22 @@
+'use client';
+
 import Header from '@/app/components/Header/Header';
-import React from 'react';
+import { notFound } from 'next/navigation';
+import React, { useEffect } from 'react';
 
 export interface PageProps {
-  params: Promise<{ id: string[] }>;
+  params: { id: string };
 }
 
-export default async function Page({ params }: PageProps) {
-  const { id } = await params;
+export default function Page({ params }: PageProps) {
+  const { id } = params;
+
+  useEffect(() => {
+    const id2 = Number.parseInt(id);
+    if (Number.isNaN(id2)) {
+      notFound();
+    }
+  }, [params.id]);
 
   return (
     <>
