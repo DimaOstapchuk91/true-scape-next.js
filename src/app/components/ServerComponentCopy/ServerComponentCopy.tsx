@@ -9,7 +9,7 @@ export default function ServerComponentCopy({
   children,
 }: ServerComponentCopyProps) {
   console.log(headers());
-  console.log('Server Component Copy');
+  console.log('Server Component Copy 2');
   return (
     <div>
       <span>Server Component Copy</span>

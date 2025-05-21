@@ -5,7 +5,7 @@ export interface ServerComponentProps {
 }
 
 export default function ServerComponent({ children }: ServerComponentProps) {
-  console.log('Server Component');
+  console.log('Server Component 1');
   return (
     <div>
       <span>Server Component</span>

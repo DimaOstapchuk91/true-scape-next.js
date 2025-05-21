@@ -1,22 +1,16 @@
-'use client';
+// 'use client';
 
 import Header from '@/app/components/Header/Header';
 import { notFound } from 'next/navigation';
 import React, { useEffect } from 'react';
 
 export interface PageProps {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }
 
 export default function Page({ params }: PageProps) {
-  const { id } = params;
-
-  useEffect(() => {
-    const id2 = Number.parseInt(id);
-    if (Number.isNaN(id2)) {
-      notFound();
-    }
-  }, [params.id]);
+  const { id } = React.use(params); // в клієнтських компонентах
+  // const { id } = await params;  в серверних компонентах з реакт 15 парамс є промісом https://nextjs.org/docs/messages/sync-dynamic-apis
 
   return (
     <>

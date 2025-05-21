@@ -1,14 +1,12 @@
-import MagicBtn from '@/app/components/MagicBtn/MagicBtn';
-
 import React from 'react';
+import Header from '@/app/components/Header/Header';
 
 export interface PagePropsTest {}
 
 export default function Page({}: PagePropsTest) {
   return (
-    <main>
-      <h1>Dashboard Page</h1>
-      <MagicBtn />
-    </main>
+    <>
+      <Header>Dashboard</Header>
+    </>
   );
 }
