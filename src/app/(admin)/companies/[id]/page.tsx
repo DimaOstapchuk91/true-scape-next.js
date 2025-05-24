@@ -14,8 +14,9 @@ export default function Page({ params }: PageProps) {
 
   return (
     <>
-      <Header>Companies ({String(id)})</Header>
-      <p>{new Date().toTimeString()}</p>
+      <div className="py-6 px-10">
+        <p>{`Information about company (${id})`}</p>
+      </div>
     </>
   );
 }
