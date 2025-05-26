@@ -14,7 +14,7 @@ export interface PageProps {
 }
 
 export default async function Page({ params }: PageProps) {
-  const { id } = React.use(params); // в клієнтських компонентах
+  const { id } = await params; // Важливо: у серверних компонентах з React 15, params є промісом, тому потрібно дочекатися його виконання
   // const { id } = await params;  в серверних компонентах з реакт 15 парамс є промісом https://nextjs.org/docs/messages/sync-dynamic-apis
 
   const queryClient = getQueryClient();
