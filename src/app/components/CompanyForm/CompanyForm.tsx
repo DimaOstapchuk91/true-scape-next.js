@@ -1,6 +1,5 @@
 'use client';
 
-import React from 'react';
 import { Form, Formik } from 'formik';
 import Button from '../buttons/Button';
 import InputField from '../InputField/InputField';

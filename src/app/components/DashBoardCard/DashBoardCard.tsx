@@ -1,5 +1,3 @@
-import React from 'react';
-
 export interface DashboardCardProps {
   label: React.ReactNode;
   children: React.ReactNode;

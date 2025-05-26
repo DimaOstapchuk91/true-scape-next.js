@@ -1,6 +1,5 @@
 'use client';
 
-import React from 'react';
 import CompanyForm, { CompanyFormProps } from '../CompanyForm/CompanyForm';
 import Modal, { ModalProps } from '../Modal/Modal';
 

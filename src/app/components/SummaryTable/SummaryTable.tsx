@@ -1,5 +1,3 @@
-import React from 'react';
-
 export interface SummaryTableProps {
   headers: React.ReactNode;
   children?: React.ReactNode;

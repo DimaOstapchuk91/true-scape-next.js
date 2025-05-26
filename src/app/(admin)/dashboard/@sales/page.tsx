@@ -1,4 +1,3 @@
-import React from 'react';
 import { getSummarySales } from '@/lib/api';
 import DashboardCard from '@/app/components/DashBoardCard/DashBoardCard';
 import SummaryTable from '@/app/components/SummaryTable/SummaryTable';
