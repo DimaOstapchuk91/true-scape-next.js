@@ -1,4 +1,3 @@
-import CompanyRow from '@/app/components/CompanyRow/CompanyRow';
 import CompanyTable from '@/app/components/CompanyTable/CompanyTable';
 import { getCompanies } from '@/lib/api';
 import getQueryClient from '@/lib/utils/getQueryClient';
